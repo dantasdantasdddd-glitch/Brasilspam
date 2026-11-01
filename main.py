@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 import asyncio
@@ -41,4 +42,4 @@ async def spamcustom(interaction: discord.Interaction, mensagem: str):
         await interaction.channel.send(mensagem)
         await asyncio.sleep(0.7)
 
-bot.run('MTU2NjIxNTQ1NjQ1NTUyODU4OQ.Gpod1z.VzYRkx-qMxrzpJYXh-Vc3kHJ7atht-kZaWBhwM')
+bot.run(os.getenv('DISCORD_TOKEN'))
